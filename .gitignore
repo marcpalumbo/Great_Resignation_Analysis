@@ -1,3 +1,4 @@
 # Ignore selected files.
 
+# DS Store.
 .DS_Store
