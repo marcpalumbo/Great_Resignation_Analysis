@@ -23,5 +23,5 @@ Employees quit their jobs as their personal values no longer aligned with compan
 <b>Reshuffling</b></br>
 Which then leads to a sudden shift in the workforce. Employees are searching for better wages, location, company workculture, and flexibility with work hours.
 
-<b>Reluctance</b>
+<b>Reluctance</b></br>
 Workers are choosing remote work over an in office setting. Many are refusing to come into work full-time. There is time saved and cost savings in regards to commuting to and from work.
