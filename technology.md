@@ -14,3 +14,5 @@ In addition to using Tableau, we will use matplotlib to formulate graphs and vis
 
 ## Presentation
 We will be putting our work together in a google slides presentation, and integrate some snippets of code, graphs, charts, and our tableau dashboard to tell our story.
+
+*Future tools/technologies will be added as we progress throughout the project.*
