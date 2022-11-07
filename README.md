@@ -18,4 +18,6 @@ Our team has determined that communication protocols will be as follows:
 
 - Sharing and collaboration are some of the more important aspects of getting this project done, in addition to our Github Repository, we have created a shared google drive. We believed that the google drive was a quicker way to share our resources and files as we progress through the project 
 
-- We have agreed to at least two meeting times per week, with additional meetings being scheduled on a weekly basis determined by necessity and amount of work needed to be completed. It is likely this will be needed each week. Our group slack channel has been active on a daily basis with news and updates.
+- We have agreed to at least two meeting times per week, with additional meetings being scheduled on a weekly basis determined by necessity and amount of work needed to be completed. It is likely this will be needed each week. Our group slack channel has been active on a daily basis with news and updates. We have thus far been meeting an extra 1-2x per week via zoom.
+
+- We have had a very open line of communication throughout our collaboration and have been supporting and encouraging one another, assisting our teammates where needed. 
