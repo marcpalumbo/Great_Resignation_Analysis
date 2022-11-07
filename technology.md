@@ -7,7 +7,7 @@ We will be using Pandas and Jupyter Notebook to clean the data and perform an ex
 Postgress is the database we intend to use, and we will integrate Tableau to display the data.
 
 ## Machine Learning
-SciKitLearn is the ML library we'll be using to create a classifier. Our training and testing setup is___. To answer the question, "What industries will be affected in the future?", we will integrate plotly and geomapping.
+SciKitLearn is the ML library we'll be using to create a classifier. To answer the question, "What industries will be affected in the future?", we will integrate plotly and geomapping.
 
 ## Dashboard
 In addition to using Tableau, we will use matplotlib to formulate graphs and visualizations.
