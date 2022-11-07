@@ -26,4 +26,4 @@ Dataset #4  [Bureau of Economic Analysis -Table 2 | BEA](https://apps.bea.gov/iT
 
 ## Questions we Hope to Answer
 
-After analyzing our data and creating various visualizations, we hope to discover a correlation between geographic regions, contributing factors such as rate of pay, work commute, and education with rates of resignation among vertain industries. We hope to predict future economic trends using our machine learning model, and clearly display these trends using graphs and charts in Tableau and MatPlotLib.
+After analyzing our data and creating various visualizations, we hope to discover a correlation between geographic regions, contributing factors such as rate of pay, work commute, and education with rates of resignation among certain industries. We hope to predict future economic trends using our machine learning model, and clearly display these trends using graphs and charts in Tableau and MatPlotLib.
