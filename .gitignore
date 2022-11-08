@@ -1,5 +1,5 @@
 #ignore jupyter checkpoints 
 .ipynb_checkpoints
-
+#ignore DB password
 config.py
 
