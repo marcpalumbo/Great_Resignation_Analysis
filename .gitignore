@@ -2,3 +2,12 @@
 
 # DS Store.
 .DS_Store
+
+# Plotly (Work In Progress)
+index.html
+
+bea_data.js
+
+Cleaned_geographic_Data.json
+
+Cleaned_geographic_Data_column_array.json
