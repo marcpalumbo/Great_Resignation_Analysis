@@ -3,3 +3,6 @@
 #ignore DB password
 config.py
 
+#ignore pycache
+__pycache__
+
