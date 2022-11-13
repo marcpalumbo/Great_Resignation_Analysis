@@ -1,2 +1,5 @@
 #ignore jupyter checkpoints
 .ipynb_checkpoints
+
+# Database pass.
+config.py
