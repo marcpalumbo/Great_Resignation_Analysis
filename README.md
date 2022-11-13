@@ -4,7 +4,7 @@
 
 [**Marc Palumbo**](https://github.com/marcpalumbo)
 
-[**Roxann Lopez**](
+[**Roxann Lopez**](https://github.com/lopezroxann)
 
 [**Gus Sanchez**](https://github.com/g626s)
 
@@ -49,6 +49,9 @@ Our team has determined that communication protocols will be as follows:
 **Machine Learning:** Python, SKforecast
 
 **Visualization and Presentation:** Tableau, Matplotlib, Google Slides
+
+<img width="820" alt="Rox_Outline1" src="https://user-images.githubusercontent.com/106620821/201538191-d9fe78e2-7550-4187-8643-3c4ae70182da.png">
+
 
 ### Data Exploration
 
