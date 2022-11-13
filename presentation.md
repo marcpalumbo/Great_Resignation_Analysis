@@ -30,6 +30,6 @@ After analyzing our data and creating various visualizations, we hope to discove
 
 
 
-(Link to Presentation)
+[Link to Google Slides Presentation](https://docs.google.com/presentation/d/1bThWSl5nYWyTkOyABuBi8tHJWkGNRaSYkgRRS5pCHq0/edit#slide=id.g17bee92606e_0_102)
 
 (Visualizations & Tableau)
