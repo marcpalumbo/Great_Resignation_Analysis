@@ -1,0 +1,28 @@
+﻿id,description
+1,Wage and salary employment
+2,Proprietors employment Farm proprietors employment
+3,Proprietors employmentNonfarm proprietors employment 2
+4,Farm employment
+5,"Nonfarm employment Private nonfarm employment Forestry, fishing, and related activities"
+6,"Nonfarm employment Private nonfarm employment Mining, quarrying, and oil and gas extraction"
+7,Nonfarm employment Private nonfarm employment Utilities
+8,Nonfarm employment Private nonfarm employment Construction
+9,Nonfarm employment Private nonfarm employment Manufacturing
+10,Nonfarm employment Private nonfarm employment Wholesale trade
+11,Nonfarm employment Private nonfarm employment Retail trade
+12,Nonfarm employment Private nonfarm employment Transportation and warehousing
+13,Nonfarm employment Private nonfarm employment Information
+14,Nonfarm employment Private nonfarm employment Finance and insurance
+15,Nonfarm employment Private nonfarm employment Real estate and rental and leasing
+16,"Nonfarm employment Private nonfarm employment Professional, scientific, and technical services"
+17,Nonfarm employment Private nonfarm employment Management of companies and enterprises
+18,Nonfarm employment Private nonfarm employment Administrative and support and waste management and remediation services
+19,Nonfarm employment Private nonfarm employment Educational services
+20,Nonfarm employment Private nonfarm employment Health care and social assistance
+21,"Nonfarm employment Private nonfarm employment Arts, entertainment, and recreation"
+22,Nonfarm employment Private nonfarm employment Accommodation and food services
+23,Nonfarm employment Private nonfarm employment Other services (except government and government enterprises)
+24,Government and government enterprises Federal civilian
+25,Government and government enterprises Military
+26,Government and government enterprises State and local State government
+27,Government and government enterprises State and local Local government
