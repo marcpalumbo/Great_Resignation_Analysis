@@ -37,8 +37,8 @@ IBM conducted a survey of approximately 1,470 of their employees that asked them
 
 Going through the data, here is a snippet of 6 different categories:
 
-![alt text] (https://github.com/marcpalumbo/Great_Resignation_Analysis/blob/rl_Great_Resignation_Analysis/Images/IBM_summary_1.png)
-![alt text] (https://github.com/marcpalumbo/Great_Resignation_Analysis/blob/rl_Great_Resignation_Analysis/Images/IBM_summary_2.png)
+![alt text](https://github.com/marcpalumbo/Great_Resignation_Analysis/blob/rl_Great_Resignation_Analysis/Images/IBM_summary_1.png)
+![alt text](https://github.com/marcpalumbo/Great_Resignation_Analysis/blob/rl_Great_Resignation_Analysis/Images/IBM_summary_2.png)
 
 -Education Field:
     -(1) Below College
