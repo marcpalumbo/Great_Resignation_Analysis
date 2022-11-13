@@ -3,13 +3,11 @@
 # DS Store.
 .DS_Store
 
-# Plotly (Work In Progress)
-Cleaned_geographic_Data.json
-
-Cleaned_geographic_Data_column_array.json
-
 # Database pass.
 config.py
 
-# Copy
+# Machine Learning Backup.
 Geographic_Data_BEA_Supervised_ML_V3-Copy1.ipynb
+
+# Tableau Workbook.
+Great_Resignation_Dashboard.twb
