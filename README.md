@@ -72,7 +72,8 @@ One of the biggest challenges we faced in week one was gathering usable data tha
 ### Visualization
 
 (Link to Tableau story)
-(Link to Presentation)
+
+[Link to Presentation](https://docs.google.com/presentation/d/1bThWSl5nYWyTkOyABuBi8tHJWkGNRaSYkgRRS5pCHq0/edit#slide=id.g17bee92606e_0_102)
 
 ### Challenges and Obstacles 
 
