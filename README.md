@@ -58,16 +58,44 @@ Our team has determined that communication protocols will be as follows:
 One of the biggest challenges we faced in week one was gathering usable data that supported the project. Before starting we were optimistic that there would be an abundance of data to choose from that would support our initial thoughts on the subject. We turned out to be wrong and realized that this part of our project would take more time than we had projected. Thankfully we discovered these datasets containing (describe). 
 
 ### Data Cleaning/Transformation
+- Reduced the data set to include only the selected features we will use for time series forecasting.
+- Count the number of null values in the raw dataset and drop the null values.
+- Delete _GeoFips_ and _Line Code_ column as they are references to another directory on the BEA website. 
+- Drop rows where the _Year_ columns has data with _(D)_ in it and made a duplicate DataFrame to not interfere with the original. 
+- Drop rows where the _Year_ column have data with _E_ from columns and replacing them in the DataFrame with empty values. 
+- Drop rows where the _Year_ column have data with _0_ values.
+- Converting the _Year_ columns to integers for Machine Learning Modeling.
+- Created a dictionary to hold the description names as well as a new dictionary with an additional string "- " to reformat the column then be filtered with 0 values to then filter to remove descrtiptions that were the total sum of a partiular sectory or industry that would skew the data and model.
+- Created a for loop in which if any row in the _Description_ column contained the added partial string "- ", the value would be appended to _0_. 
+- Incorporated the python zip() function for parallel iteration to have a new DataFrame without the total sum of Descriptions. 
+- Created a dictionary to hold the description names as well as a new dictionary with an additional string "- " to reformat the column then be filtered with 0 values to then filter to only have the six industries that will be used in the model.
+- Created a for loop in which if any row in the _Description_ column contained the added partial string "- ", the value would be appended to _0_. 
 
-(Describe process and roadblocks, include snippets of code)
+<p align="center">
+<img width="751" alt="skforecast_processing" src="https://user-images.githubusercontent.com/107281474/201575890-56cb1e6d-3faf-42e6-984c-8723544ea4b6.png">
+</p>
+
+- Incorporated the python zip() function for parallel iteration to have a new DataFrame with the six desired industries for forecasting. 
+- Split the _GeoName_ column to _Metropolitan portion_ and _Nonmetropolitan portion_.
+- Reorder of columns in the new DataFrame. 
+- Label encode Geoname column with '0' being for _Metropolitan portion_ and '1' for _Nonmetropolitan portion_.
+- Created a new DataFrame with pandas iterrows() method to generate an interator object of the DataFrame, in this case generating a _Year_ column for time series forecasting. 
+
+<p align="center">
+<img width="760" alt="skforecast_itterow" src="https://user-images.githubusercontent.com/107281474/201576119-db7a2090-cd69-4d0b-b5f3-c4dbce9617e5.png">
+</p>
+
+- Converted the new 'Year' column from a scalar, array-like, Series or DataFrame/dict-like to a pandas datetime object.
+- Label encode the _State_ column. 
+- Label encode the _Description_ column.
+- Reindex the _Year_ column as a index. 
 
 ### Machine Learning
-
-
+During the implementation and exploratory stage of our Machine Learning model, we initially had planned to use regression models but it became soon apparent that our question we hoped to have answered is a time series related problem. For that reason our group then shifted our interest to time series forecasting models. For this reason we decided to used `Skforecast` that is a python library that eases using scikit-learn regressors as multi-step forecasters. It also works with any regressor compatible with the scikit-learn API (pipelines, CatBoost, LightGBM, XGBoost, Ranger etc..). We decided to use `Recursive autoregressive forecasting` and `ForecasterAutoreg` that inputs frequency distribution. As the time of this deliverable submission, the _Year_ index has duplicate values and in order to use `Skforecast` the frequency has to be set as 'AS' or beginning of the year with unique values. In the upcoming deliverables, the _Year_ index will be converted to datetime again with additional parameters and will be grouped by index, get the cumulative count and convert that to timedelta with unique values being in miliseconds.
+- Based on our project question and objectives, our target variable is the year 2020 for the reason that our objective is to set up a time series forecasting model for a one year iteration to stand as a prototype for an upgraded model with more input features and collected data across industries. 
+- Feature variables are State, Geographic Name, and Industry Desc
 
 ### Database
-
-
 
 ### Visualization
 
