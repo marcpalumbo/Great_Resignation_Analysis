@@ -10,18 +10,40 @@ This project and the technical knowledge and skills used for analysis are largle
 
 ---
 
-## Introduction 
+## Technologies | Languages | IDE | Data Source: 
+<details>
+<summary>Software and IDE:</summary>
 
-The ultimate goal of this analysis is to determine the underlying factors that led to the recent phenomenon being dubbed “The Great Resignation.” Our team decided on this topic after meeting for the first time. We decided that this topic was intriguing and applicable to the project, and the overall sentiment of each of us as individuals as we progressed through our careers. It seems that workplace cultures and the willingness to submit to old school working conditions has decreased over the recent years, our goal is to find out why. 
+- [![Python](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue)](https://www.python.org/)
+- [![Pandas](https://img.shields.io/badge/Pandas-2C2D72?style=for-the-badge&logo=pandas&logoColor=white)](https://pandas.pydata.org/)
+- [![VS Code](https://img.shields.io/badge/VSCode-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)](https://code.visualstudio.com/)
+- [![Jupyter Notebook](https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white)](https://jupyter.org/)
+  - Libraries:
+    - NumPy
+    - Datetime
+    - Matplotlib
+    - Scikit-learn
+    - Skforecast
+- [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+- ![Tableau](https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=Tableau&logoColor=white)
 
-We believe that younger generations are placing more emphasis on work/life balance, compensation transparency, remote work, and company culture. Our goal for this project is to find, process, and use the data we can find to see what has caused this shift around working conditions and employment. 
+</details>
 
-### Data Sources
+<details>
+<summary>Data Sources:</summary>
 
 - [U.S. Bureau of Labor Statistics](https://www.bls.gov/data/#employment)
 - [FRED | All Employees - Manufacturing](https://fred.stlouisfed.org/series/MANEMP)
 - [BEA | Bureau of Economic Analysis](https://apps.bea.gov/iTable/?reqid=70&step=1&acrdn=6#eyJhcHBpZCI6NzAsInN0ZXBzIjpbMSwyNCwyOSwyNSwzMSwyNiwyNywzMCwzMF0sImRhdGEiOltbIlRhYmxlSWQiLCIzMyJdLFsiQ2xhc3NpZmljYXRpb24iLCJOQUlDUyJdLFsiTWFqb3JfQXJlYSIsIjEwIl0sWyJTdGF0ZSIsWyIxMCJdXSxbIkFyZWEiLFsiWFgiXV0sWyJTdGF0aXN0aWMiLCItMSJdLFsiVW5pdF9vZl9tZWFzdXJlIiwiTGV2ZWxzIl0sWyJZZWFyIixbIjIwMjAiLCIyMDE5IiwiMjAxOCIsIjIwMTciLCIyMDE2IiwiMjAxNSIsIjIwMTQiXV0sWyJZZWFyQmVnaW4iLCItMSJdLFsiWWVhcl9FbmQiLCItMSJdXX0=)
 - [Kaggle | HR Analytics - Attrition](https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset)
+
+</details>
+  
+## Introduction 
+
+The ultimate goal of this analysis is to determine the underlying factors that led to the recent phenomenon being dubbed “The Great Resignation.” Our team decided on this topic after meeting for the first time. We decided that this topic was intriguing and applicable to the project, and the overall sentiment of each of us as individuals as we progressed through our careers. It seems that workplace cultures and the willingness to submit to old school working conditions has decreased over the recent years, our goal is to find out why. 
+
+We believe that younger generations are placing more emphasis on work/life balance, compensation transparency, remote work, and company culture. Our goal for this project is to find, process, and use the data we can find to see what has caused this shift around working conditions and employment. 
 
 ### Questions we Hope to Answer
 
@@ -40,7 +62,7 @@ Our team has determined that communication protocols will be as follows:
 
 - We have agreed to at least two meeting times per week, with additional meetings being scheduled on a weekly basis determined by necessity and amount of work needed to be completed. It is likely this will be needed each week. Our group slack channel has been active on a daily basis with news and updates. We have thus far been meeting an extra 1-2x per week via zoom.
 
-### Technologies Used
+### Project Methodology
 
 **Data Cleaning/ETL:** Python, Pandas, Jupyter Notebook, CSV file, 
 
