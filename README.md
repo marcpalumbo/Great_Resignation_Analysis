@@ -1,14 +1,14 @@
 # Great_Resignation_Analysis
 
-## Contributors
+## Contributors & Acknowledgements:
 
-[**Marc Palumbo**](https://github.com/marcpalumbo)
+[**Marc Palumbo**](https://github.com/marcpalumbo), [**Roxann Lopez**](https://github.com/lopezroxann), [**Gus Sanchez**](https://github.com/g626s), [**Heather Bailey**](https://github.com/HeatherBailey0630)
 
-[**Roxann Lopez**](https://github.com/lopezroxann)
+This project and the technical knowledge and skills used for analysis are largley in part due to the the guidance and direction of Khaled Karmen and the instructional team of UC Berkeley Data Analytics & Visualization Cohort. 
 
-[**Gus Sanchez**](https://github.com/g626s)
+<table><tr>
 
-[**Heather Bailey**](https://github.com/HeatherBailey0630)
+---
 
 ## Introduction 
 
