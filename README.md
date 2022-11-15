@@ -1,3 +1,10 @@
+<p align="center">
+  <img width="900" height="400" src="https://user-images.githubusercontent.com/107281474/202018616-8c912f9a-361a-43da-93b7-178dd82e1912.png">
+</p>
+
+<table><tr>
+
+---
 # Great_Resignation_Analysis
 
 ## Contributors & Acknowledgements:
@@ -12,7 +19,6 @@ This project and the technical knowledge and skills used for analysis are largle
 <table><tr>
 
 ---
-
 ## Technologies | Languages | IDE | Data Source: 
 <details>
 <summary>Software and IDE:</summary>
