@@ -42,7 +42,8 @@ This project and the technical knowledge and skills used for analysis are largle
 <summary>Data Sources:</summary>
 
 - [U.S. Bureau of Labor Statistics](https://www.bls.gov/data/#employment)
-- [FRED | All Employees - Manufacturing](https://fred.stlouisfed.org/series/MANEMP)
+- [Federal Reserve Economic Data | FRED | St. Louis Fed](https://fred.stlouisfed.org/)
+  - [All Employees - Manufacturing](https://fred.stlouisfed.org/series/MANEMP)
 - [BEA | Bureau of Economic Analysis](https://apps.bea.gov/iTable/?reqid=70&step=1&acrdn=6#eyJhcHBpZCI6NzAsInN0ZXBzIjpbMSwyNCwyOSwyNSwzMSwyNiwyNywzMCwzMF0sImRhdGEiOltbIlRhYmxlSWQiLCIzMyJdLFsiQ2xhc3NpZmljYXRpb24iLCJOQUlDUyJdLFsiTWFqb3JfQXJlYSIsIjEwIl0sWyJTdGF0ZSIsWyIxMCJdXSxbIkFyZWEiLFsiWFgiXV0sWyJTdGF0aXN0aWMiLCItMSJdLFsiVW5pdF9vZl9tZWFzdXJlIiwiTGV2ZWxzIl0sWyJZZWFyIixbIjIwMjAiLCIyMDE5IiwiMjAxOCIsIjIwMTciLCIyMDE2IiwiMjAxNSIsIjIwMTQiXV0sWyJZZWFyQmVnaW4iLCItMSJdLFsiWWVhcl9FbmQiLCItMSJdXX0=)
 - [Kaggle | HR Analytics - Attrition](https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset)
 
