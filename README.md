@@ -65,16 +65,7 @@ We believe that younger generations are placing more emphasis on work/life balan
 - What will future U.S. economic trends look like?
 - What industries will be most impacted in the future by resignations?
 
-### _Communication Protocols_
-
-Our team has determined that communication protocols will be as follows:
-
-- Responsiveness and transparency are important, we have agreed that slack messages and updates will be provided as work is being done. 
-
-- Sharing and collaboration are some of the more important aspects of getting this project done, in addition to our Github Repository, we have created a shared google drive. We believed that the google drive was a quicker way to share our resources and files as we progress through the project 
-
-- We have agreed to at least two meeting times per week, with additional meetings being scheduled on a weekly basis determined by necessity and amount of work needed to be completed. It is likely this will be needed each week. Our group slack channel has been active on a daily basis with news and updates. We have thus far been meeting an extra 1-2x per week via zoom.
-
+  
 ## Project Methodology
 
 **Data Cleaning/ETL:** Python, Pandas, Jupyter Notebook, CSV file, 
