@@ -14,7 +14,7 @@
 - [**Gus Sanchez**](https://www.linkedin.com/in/gustavosanchez626/) [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/g626s)
 - [**Heather Bailey**](https://www.linkedin.com/in/heather-bailey-70b50a22a/) [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/HeatherBailey0630)
 
-This project and the technical knowledge and skills used for analysis are largley in part due to the the guidance and direction of Khaled Karmen and the instructional team of UC Berkeley Data Analytics & Visualization Cohort. 
+This project and the technical knowledge and skills used for analysis are largley in part due to the the guidance and direction of Khaled Karmen and the instructional team at UC Berkeley Data Analytics & Visualization Cohort. 
 
 <table><tr>
 
