@@ -124,6 +124,10 @@ During the implementation and exploratory stage of our Machine Learning model, w
 ## Database
 
 We ultimately decided that PGAdmin would be a suitable tool for storing our data in a database for this project. We realized that since we would collectively be using less than 100,000 rows of data, there would be no reason to you Amazon Web Services or any other big data service for monetary and practical reasons. 
+  
+
+Pictured below is our schema used to establish our tables with primary and foreign keys. Initially, we stored everything as static data just to ensure that we were capable of storing and querying data successfully. This schema along with manual imports allowed us to store the static data first. We then focused on making the database synchronous with our jupyter notebooks and machine learning models. ![Basic Database Schema](https://github.com/marcpalumbo/Great_Resignation_Analysis/blob/main/Images/sql_schema_marc.png)
+
 
 We were successfully able to connect our machine learning model to our database via Jupyter Notebook using the code pictured below: 
 ![Connection to Postgres](https://github.com/marcpalumbo/Great_Resignation_Analysis/blob/main/Images/SQL_connection_to_jupyter.png)
