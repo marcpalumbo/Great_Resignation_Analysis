@@ -123,6 +123,20 @@ During the implementation and exploratory stage of our Machine Learning model, w
 
 ## Database
 
+We ultimately decided that PGAdmin would be a suitable tool for storing our data in a database for this project. We realized that since we would collectively be using less than 100,000 rows of data, there would be no reason to you Amazon Web Services or any other big data service for monetary and practical reasons. 
+
+We were successfully able to connect our machine learning model to our database via Jupyter Notebook using the code pictured below: 
+![Connection to Postgres](https://github.com/marcpalumbo/Great_Resignation_Analysis/blob/main/Images/SQL_connection_to_jupyter.png)
+
+In the screenshot above, we import the necessary modules to create our database engine and connect it to the notebook we are using. The to_sql portion of our code in the fourth block establishes the table name, references the engine created, and will replace the table with new or altered data each time it is run (if applicable). This will allow for our database to be updated properly should we ever find new data in the future and want to add to our models and database. 
+
+The following  blocks demonstrate how we are able to pull data from the our postgres database into a jupyter notebook and create a pandas dataframe. There may be other ways to do this but this was a method we found to be successful after trying multiple times, so we decided to go with it as it is functioning in the timeframe we need it to function. 
+
+Ultimately, our database is not very complex, consisting of two main tables that we used for our machine learning models. However, should we every wish to add to our project, we have the framework already establishing to do so. Pictured below is the query we used to showcase the most effected industries in descending order:
+![Most Effective Industries in Descending Order](https://github.com/marcpalumbo/Great_Resignation_Analysis/blob/main/Images/SQL_query_example.png) 
+  
+
+
 ## Visualization
 
 (Link to Tableau story)
