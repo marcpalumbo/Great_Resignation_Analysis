@@ -143,7 +143,7 @@ Ultimately, our database is not very complex, consisting of two main tables that
 
 ## Visualization
 
-(Link to Tableau story)
+[Link to Tableau story](https://public.tableau.com/app/profile/gustavo.sanchez8211/viz/Great_Resignation_Analysis_Dashboard/GreatResignationAnalysisStory)
 
 [Link to Presentation](https://docs.google.com/presentation/d/1bThWSl5nYWyTkOyABuBi8tHJWkGNRaSYkgRRS5pCHq0/edit#slide=id.g17bee92606e_0_102)
 
