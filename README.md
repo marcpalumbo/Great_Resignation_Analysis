@@ -119,9 +119,39 @@ One of the biggest challenges we faced in week one was gathering usable data tha
 
 ## Machine Learning
 
-During the implementation and exploratory stage of our Machine Learning portion and modeling, we initially had planned to use regression models but it became soon apparent that our question we hoped to have answered was a time series related problem. A time series is a succession of chronologically ordered data spaced at equal or unequal intervals. The forecasting process consists of predicting the future value of a time series, either by modeling the series solely based on its past behavior or by using other external variables. For this reason, our group then shifted our interest and focus to time series forecasting models particularly on `Scikit-learn` regression models to perform forecasting on time series. After further research and consideration, our group decided to use `Skforecast`. `Skforecast`, is a python library that eases using _scikit-learn regressors_ as _multi-step forecasters_. It also works with any regressor compatible with the _scikit-learn API (pipelines, CatBoost, LightGBM, XGBoost, Ranger etc..)_. We decided to use `Recursive autoregressive forecasting` and `ForecasterAutoreg` that inputs frequency distribution. 
+### _Overview of Machine Learning Methodology_
 
-One major drawback that we discovered when preprocessing the data from the _Bureau of Economic Analysis_ for modeling was that there was no time series data or datetime series associated with the _State_ or _Industries_. Since the _Year_ index had duplicate values when the original DataFrame was transformed, in order to use `Skforecast`, the frequency of the time series index had to be set in a datetime format, in our case _'AS'_ or beginning of the year with unique values. To bypass the _TypeError: “Cannot reindex from duplicate axis”_, we created a duplicate DataFrame to not interfere with the original DataFrame, incorporated a time tuple and most importantly implemented a iterrows() function on a new column called “New_Year” to be formatted as YYYY-MM-DD 00:00:00. A millisecond was added for each row to be labeled as unique to then be reindexed to then be allowed to be split into train-test with steps equating to 4. The steps were equated to 4 years for the reason to be used as a test set to evaluate the predictive capacity of the model. With the ForecasterAutoreg class, a model was created and trained from a RandomForestRegressor regressor with a time window of 6 lags.  Once our model was trained, the test data is predicted for 4 years into the future of our chosen industries for modeling. 
+During the implementation and exploratory stage of our Machine Learning portion and modeling, we initially had planned to use regression models but it became soon apparent that our question we hoped to have answered was a time series related problem. A time series is a succession of chronologically ordered data spaced at equal or unequal intervals. The forecasting process consists of predicting the future value of a time series, either by modeling the series solely based on its past behavior or by using other external variables. For this reason, our group then shifted our interest and focus to time series forecasting models particularly on `Scikit-learn` _regression models_ to perform forecasting on time series. After further research and consideration, our group decided to use `Skforecast`. `Skforecast`, is a python library that eases using _scikit-learn regressors_ as _multi-step forecasters_. It also works with any regressor compatible with the _scikit-learn API (pipelines, CatBoost, LightGBM, XGBoost, Ranger etc..)_. We decided to use `Recursive autoregressive forecasting` and `ForecasterAutoreg` that inputs frequency distribution. 
+
+<p align="center">
+<img width="764" alt="skforecast_overview" src="https://user-images.githubusercontent.com/107281474/203164793-4177a6b0-908b-4659-bcce-b4a840ab5a1c.png">
+</p>
+
+<p align="center">
+<img width="760" alt="skforecast_forecasterautoreg" src="https://user-images.githubusercontent.com/107281474/203165615-d92cce22-eef3-4e18-af1a-17e121a1b8c8.png">
+</p>
+
+One major drawback that we discovered when preprocessing the data from the _Bureau of Economic Analysis_ for modeling was that there was no time series data or datetime series associated with the _State_ or _Industries_. Since the _Year_ index had duplicate values when the original DataFrame was transformed, in order to use `Skforecast`, the frequency of the time series index had to be set in a datetime format, in our case _'AS'_ or beginning of the year with unique values. 
+
+<p align="center">
+<img width="762" alt="sklearn_duplicate_axis_error" src="https://user-images.githubusercontent.com/107281474/203164478-8f2c33c2-47d6-4e35-9179-a7a8f03f2e71.png">
+</p>
+
+To bypass the _TypeError: “Cannot reindex from duplicate axis”_, we:
+- Created a duplicate DataFrame to not interfere with the original DataFrame.
+- Incorporated a time tuple.
+- Implemented a iterrows() function to create a new column called “New_Year” to be formatted as YYYY-MM-DD 00:00:00. A millisecond was added for each row to be labeled as unique to then be reindexed to then be allowed to be split into _train-test_ with steps equating to _4_. 
+- The steps were equated to 4 years for the reason to be used as a _test set_ to evaluate the _predictive capacity_ of the model. 
+
+With the `ForecasterAutoreg` class, a model was created and trained from a _RandomForestRegressor_ regressor with a time window of _6 lags_.  Once our model was trained, the _test data_ is predicted for 4 years into the future of our chosen industries for modeling. 
+
+<p align="center">
+<img width="760" alt="skforecast_train_test" src="https://user-images.githubusercontent.com/107281474/203165111-71b21532-4c49-4e01-818a-db409707afcd.png">
+</p>
+
+<p align="center">
+<img width="760 alt="skforecast_prediction" src="https://user-images.githubusercontent.com/107281474/203166007-0b815bf8-c77d-40c4-9964-234001c89d9d.png">
+</p>
 
 In the section for Prediction error in the test set, The error that the model makes in its predictions is quantified. In this case, the metric used is the mean squared error (MSE). The Mean Squared Error (MSE) is for the most part the most practical and common loss function and is calculated by taking the difference between our model’s predictions and the ground truth, squaring it, and average it out across the whole dataset that we used for our project on the Great Resignation. MSE is advantageous in regards for ensuring that our trained model has no outlier predictions with huge errors since the MSE puts larger weight on those errors due to the squaring part of the function. In contrast, if our model makes a single bad prediction, the squaring part of our function will magnify the error to which since our original dataset had no time series data, our error was significantly magnified with an test error MSE of 3545547978.331675.
 
