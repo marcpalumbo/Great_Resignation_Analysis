@@ -121,7 +121,11 @@ One of the biggest challenges we faced in week one was gathering usable data tha
 
 ### _Overview of Machine Learning Methodology_
 
-During the implementation and exploratory stage of our Machine Learning portion and modeling, we initially had planned to use regression models but it became soon apparent that our question we hoped to have answered was a time series related problem. A time series is a succession of chronologically ordered data spaced at equal or unequal intervals. The forecasting process consists of predicting the future value of a time series, either by modeling the series solely based on its past behavior or by using other external variables. For this reason, our group then shifted our interest and focus to time series forecasting models particularly on `Scikit-learn` _regression models_ to perform forecasting on time series. After further research and consideration, our group decided to use `Skforecast`. `Skforecast`, is a python library that eases using _scikit-learn regressors_ as _multi-step forecasters_. It also works with any regressor compatible with the _scikit-learn API (pipelines, CatBoost, LightGBM, XGBoost, Ranger etc..)_. We decided to use `Recursive autoregressive forecasting` and `ForecasterAutoreg` that inputs frequency distribution. 
+During the implementation and exploratory stage of our Machine Learning portion and modeling, we initially had planned to use regression models but it became soon apparent that our question we hoped to have answered was a time series related problem. A time series is a succession of chronologically ordered data spaced at equal or unequal intervals. The forecasting process consists of predicting the future value of a time series, either by modeling the series solely based on its past behavior or by using other external variables. For this reason, our group then shifted our interest and focus to time series forecasting models particularly on `Scikit-learn` _regression models_ to perform forecasting on time series. 
+  
+### _Skforecast_
+  
+After further research and consideration, our group decided to use `Skforecast`. `Skforecast`, is a python library that eases using _scikit-learn regressors_ as _multi-step forecasters_. It also works with any regressor compatible with the _scikit-learn API (pipelines, CatBoost, LightGBM, XGBoost, Ranger etc..)_. We decided to use `Recursive autoregressive forecasting` and `ForecasterAutoreg` that inputs frequency distribution. 
 
 <p align="center">
 <img width="764" alt="skforecast_overview" src="https://user-images.githubusercontent.com/107281474/203164793-4177a6b0-908b-4659-bcce-b4a840ab5a1c.png">
@@ -153,11 +157,38 @@ With the `ForecasterAutoreg` class, a model was created and trained from a _Rand
 <img width="760 alt="skforecast_prediction" src="https://user-images.githubusercontent.com/107281474/203166007-0b815bf8-c77d-40c4-9964-234001c89d9d.png">
 </p>
 
-In the section for Prediction error in the test set, The error that the model makes in its predictions is quantified. In this case, the metric used is the mean squared error (MSE). The Mean Squared Error (MSE) is for the most part the most practical and common loss function and is calculated by taking the difference between our model’s predictions and the ground truth, squaring it, and average it out across the whole dataset that we used for our project on the Great Resignation. MSE is advantageous in regards for ensuring that our trained model has no outlier predictions with huge errors since the MSE puts larger weight on those errors due to the squaring part of the function. In contrast, if our model makes a single bad prediction, the squaring part of our function will magnify the error to which since our original dataset had no time series data, our error was significantly magnified with an test error MSE of 3545547978.331675.
+### _Prediction error in the test set_
 
-In the section for Hyperparameter tuning, the trained ForecasterAutoreg uses a 6 lag time window and a Random Forest model with the default hyperparameters. However, in our case since there is no particular reason why these values are the most suitable for our forecasting purposes,  In order to identify the best combination of lags and hyperparameters, we used the Skforecast library the  grid_search_forecaster function. This library Icompares the results obtained with each model configuration. The grid_search_forecaster compared 12 models and was fit 244 times. Since the index was manipulated to create the time stamps, the index still did not have a frequency and was overwritten with a RangeIndex of step 1. All lags that were in the resilts_grid had a high MSE. The best results are obtained using a time window of 20 lags and a Random Forest set up of {'max_depth': 3, 'n_estimators': 100}.
+In the section for Prediction error in the test set, the error that the model makes in its predictions is quantified. In this case, the metric used is the _mean squared error (MSE)_. The _Mean Squared Error (MSE)_ is for the most part the most practical and common loss function and is calculated by taking the difference between our model’s predictions and the ground truth, squaring it, and average it out across the whole dataset that we used for our project on the Great Resignation. _MSE_ is advantageous in regards for ensuring that our trained model has no outlier predictions with huge errors since the _MSE_ puts larger weight on those errors due to the squaring part of the function. In contrast, if our model makes a single bad prediction, the squaring part of our function will magnify the error. 
+- The original dataset that was used collected from the _Bureau of Economic Analysis_ had no time series data, our error was significantly magnified with an _test error MSE_ of `3545547978.331675`.
 
-For our final model, a ForecasterAutoreg is trained with the optimal configuration found by validation. It is important to note that this step is not necessary if return_best = True is specified in the grid_search_forecaster function. The optimal combination of hyperparameters significantly inceased our  test error with our test error being Test error (mse): 5931530045.247393 due to there being insufficient historical time series data that expand decades. From the modeling of the six industries for modeling and analysis future input and features with the important indicator being time-series data and categorical features and scores such as retention levels and years of employment, Skforecast could be used to train, test, and predict these industries in a year or years iteration as well as monthly. 
+<p align="center">
+<img width="760 alt="skforecast_prediction_error_in_the_test_set" src="https://user-images.githubusercontent.com/107281474/203211046-22a1c523-0313-4e05-8dee-6f8db8768803.png">
+</p>
+
+### _Hyperparameter Tuning_ 
+  
+In the section for Hyperparameter tuning, the trained _ForecasterAutoreg_ uses a _6_ lag time window and a _Random Forest_ model with the default hyperparameters. However, in our case since there is no particular reason why these values are the most suitable for our forecasting purposes, in order to identify the best combination of lags and hyperparameters, we used the `Skforecast` library the _grid_search_forecaster_ function. This library compares the results obtained with each model configuration. The _grid_search_forecaster_ compared 12 models and was fit 244 times. 
+- Since the index was manipulated to create the time stamps, the index still did not have a frequency and was overwritten with a RangeIndex of step 1. All lags that were in the _results_grid_ had a high MSE. 
+- The best results are obtained using a time window of 20 lags and a _Random Forest_ set up of {'max_depth': 3, 'n_estimators': 100}.
+
+<p align="center">
+<img width="760" alt="skforecast_hyperparameter_tuning" src="https://user-images.githubusercontent.com/107281474/203211868-6249d3d2-7748-4741-82c4-8d775dc45e21.png">
+</p>
+
+<p align="center">
+<img width="760" alt="skforecast_grid_seach" src="https://user-images.githubusercontent.com/107281474/203212273-e263ebba-2fad-4353-aa47-f9d1e269847a.png">
+</p>
+
+### _Final model_
+
+For our final model, a _ForecasterAutoreg_ is trained with the optimal configuration found by validation. It is important to note that this step is not necessary if _return_best = True_ is specified in the _grid_search_forecaster_ function. 
+- The optimal combination of hyperparameters significantly inceased our test error with our test error being `Test error (mse): 5931530045.247393` due to there being insufficient historical time series data that expand decades. 
+- From the modeling of the six industries for modeling and analysis future input and features with the important indicator being time-series data and categorical features and scores such as retention levels and years of employment, Skforecast could be used to train, test, and predict these industries in a year or years iteration as well as monthly. 
+
+<p align="center">
+<img width="760" alt="skforecast_final_model" SRC="https://user-images.githubusercontent.com/107281474/203212756-c582847d-5235-42db-b128-47bc063c9662.png">
+<p align="center">
 
 ## Database
 
