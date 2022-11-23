@@ -222,4 +222,6 @@ One of the biggest challenges we faced in week one was gathering usable data tha
 
 ## Conclusion and Future Recommendations
 
+In conclusion, individuals experiencing attrition are likely to voluntarily leave their current roles. We have found that the greatest contributing factors were spending more time away from home due to having to work overtime and traveling frequently for their roles. This therefore contributed to a poor work life balance. Due to the Great Resignation, this has also led to the Great Upgrade. Employees moved into different roles that offered better wages, work life balance, company culture, and location.
+  
 We set out to find a correlation between certain factors like length of commute, age, education level, marital status, etc. and rates of resignation. We encountered a few obstacles along the way, including a lack of appropriate data, and some challenges with the machine learning portion. In the future, we would research the topic more thoroughly beforehand, don’t make any assumptions, and have resource data that has time series associated with it.
