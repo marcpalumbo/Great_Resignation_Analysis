@@ -218,6 +218,8 @@ Ultimately, our database is not very complex, consisting of two main tables that
 
 ## Challenges and Obstacles 
 
-One of the biggest challenges we faced in week one was gathering usable data that supported the project. Before starting, we were optimistic that there would be an abundance of data to choose from that would support our initial thoughts on the subject. We turned out to be wrong, and realized that this part of our project will take more time than we had projected. We were confident that once we got the data we needed, the ETL process and steps thereafter would come along nicely. 
+One of the biggest challenges we faced in week one was gathering usable data that supported the project. Before starting, we were optimistic that there would be an abundance of data to choose from that would support our initial thoughts on the subject. We turned out to be wrong, and realized that this part of our project will take more time than we had projected. We were confident that once we got the data we needed, the ETL process and steps thereafter would come along nicely. We also encountered some challenges with the machine learning portion, as noted above. 
 
 ## Conclusion and Future Recommendations
+
+We set out to find a correlation between certain factors like length of commute, age, education level, marital status, etc. and rates of resignation. We encountered a few obstacles along the way, including a lack of appropriate data, and some challenges with the machine learning portion. In the future, we would research the topic more thoroughly beforehand, don’t make any assumptions, and have resource data that has time series associated with it.
